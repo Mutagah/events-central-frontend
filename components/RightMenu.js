@@ -55,7 +55,7 @@ const RightMenu = () => {
         " "
       ) : (
         <Menu.Item>
-          <a href="/userprofile">View Profile</a>
+          <Link href="/userprofile">View Profile</Link>
         </Menu.Item>
       )}
 
@@ -63,14 +63,14 @@ const RightMenu = () => {
         " "
       ) : (
         <Menu.Item>
-          <a
+          <Link
             onClick={() => {
               handleLogout();
               openNotification();
             }}
           >
             Logout
-          </a>
+          </Link>
         </Menu.Item>
       )}
     </Menu>
