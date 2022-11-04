@@ -45,7 +45,7 @@ const RightMenu = () => {
     <Menu>
       {"error" in userData ? (
         <Menu.Item>
-          <a href="/login">Login</a>
+          <Link href="/login">Login</Link>
         </Menu.Item>
       ) : (
         " "
@@ -79,25 +79,25 @@ const RightMenu = () => {
   return (
     <Menu overflowedIndicator mode={md ? "horizontal" : "inline"}>
       <Menu.Item>
-        <a href="/">
+        <Link href="/">
           <b>Home</b>
-        </a>
+        </Link>
       </Menu.Item>
 
       {userData.is_organiser ? (
         <Menu.Item>
-          <a href="/createvent">
+          <Link href="/createvent">
             <b>Create an Event</b>
-          </a>
+          </Link>
         </Menu.Item>
       ) : (
         " "
       )}
 
       <Menu.Item>
-        <a href="/about">
+        <Link href="/about">
           <b>About Us</b>
-        </a>
+        </Link>
       </Menu.Item>
       <Menu.Item>
         <div>
